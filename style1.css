@@ -1,0 +1,363 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This will move the logo to the right */
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.logo {
+    text-align: right; /* Align the portfolio name to the right side */
+    font-size: 1.5rem;
+}
+
+.portfolio-name {
+    text-align: right; /* Align name and contact info to the right */
+    font-size: 1rem;
+}
+
+.contact-info {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.email-icon, .phone-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Section Styles */
+.section {
+    padding: 70px 0;
+}
+
+/* About Section */
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-right: 40px;
+    border: 4px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.bio p {
+    font-size: 18px;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Skills Section */
+#skills .skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: slideInRight 1.5s ease;
+}
+
+.skill-card {
+    width: 200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    transform: scale(0.8);
+    animation: bounce 2s infinite;
+    image-resolution:calc(2 * 96dpi);
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section */
+#projects {
+    padding: 30px 20px;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+
+#projects h2,h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project-card {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Recommendations Section */
+#recommendations {
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.recommendation {
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:aliceblue;
+    color: black;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer .home-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+footer .home-icon:hover {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Center-align sections */
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#recommendations, #skills, #projects {
+    text-align: center;
+}
+
+.recommendation, .skill-card, .project-card {
+    display: inline-block; /* Align items horizontally */
+    margin: 20px; /* Add spacing between items */
+    vertical-align: top; /* Align items vertically */
+}
+/* Add Recommendation Section */
+#recommendation-list {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#new-recommendation {
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#recommender-name{
+    width: 20%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.recommendation p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+.recommendation h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}

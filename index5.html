@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script3.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+            <div class="logo">
+                <div class="portfolio-name">
+                    <span>John's Portfolio</span><br>
+                    <span class="contact-info">
+                        <span class="email-icon">✉️</span> Email: johndoe12345@gmail.com<br>
+                        <span class="phone-icon">📞</span> Phone: +11234567890
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="profile">
+                <img src="Profile.jpeg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>
+                    Hi! My name is <strong>John Doe</strong>, and I’m a dedicated and enthusiastic professional with over 3 years of experience in the field of software development. I specialize in creating innovative solutions and writing clean, efficient, and scalable code.
+                    With a strong foundation in <strong>JavaScript, React, and Node.js</strong>, I have successfully delivered numerous projects that solve real-world problems. My focus has always been on understanding client requirements and exceeding expectations through quality and commitment.
+                    When I’m not coding, I enjoy exploring new technologies, contributing to open-source projects, and mentoring budding developers. My goal is to grow continually and make a meaningful impact through technology.
+                </p>            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2><br>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <img src="html.png" alt="HTML" class="skill-logo">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="css.png" alt="CSS" class="skill-logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="js.png" alt="JavaScript" class="skill-logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="react.png" alt="HTML" class="skill-logo">
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <img src="node.png" alt="HTML" class="skill-logo">
+                    <p>Node</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-card">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JS that helps users manage tasks effectively.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A data visualization tool created with React and D3.js for analyzing business performance metrics.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>A mobile application developed with Flutter for tracking personal fitness goals.</p>
+            </div>
+        </div>
+    </section>
+    <section id="recommendations" class="section">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+            <div class="recommendation">
+                <p>"John is a talented developer with an eye for detail."</p>
+                <h4>- Jane Smith</h4>
+            </div>
+            <div class="recommendation">
+                <p>"A true professional who delivers quality work on time."</p>
+                <h4>- Michael Brown</h4>
+            </div>
+        </div>
+        <div>
+            <input type="text" id="recommender-name" placeholder="Your Name">
+            <input type="text" id="new-recommendation" placeholder="Add a recommendation">
+            <button type="button" onclick="addRecommendation()">Submit</button>
+        </div>
+    </section>
+    <footer>
+        <a href="#top"><img src="home.png" alt="Home" class="home-icon"></a>
+        <p>© 2024 John's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
