@@ -24,7 +24,7 @@ You change the
   index5.html
   <section id="about">
     <h2>About Me</h2>
-    <img src="path-to-your-new-profile-image.jpg" alt="Your Profile Image" class="profile-img">
+    <img src="<!-- your image file -->" alt="Your Profile Image" class="profile-img">
     <h3><!-- Your Name --></h3>
     <p><!-- Profile Summary --></p>
   </section>
