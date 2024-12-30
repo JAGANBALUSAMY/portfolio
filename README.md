@@ -1,5 +1,5 @@
 # portfolio
-You change the 
+You can change the\n
 1.Header:
   i)Your Name: You can update the text that represents your name.
   ii)Your Email: You can update the text that represents your email.
