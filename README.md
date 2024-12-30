@@ -15,7 +15,7 @@ You can change the
   
   ii)Update Your Name: You can update the text that represents your name.
   
-  iii)Modify the Summary: You can change the text in the <p> tag that summarizes your profile.
+  iii)Modify the Summary: You can change the text in the "<p>" tag that summarizes your profile.
   
 3.Skills: Update the skills section by changing the logos and the skills names. For each skill, you’ll need to change the image and text.
 
