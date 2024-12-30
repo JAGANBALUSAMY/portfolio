@@ -6,7 +6,7 @@ You change the
   iii)Your Phone Number: You can update the text that represents your phone number.
   Example:
   index5.html
-  <div class="logo">
+  "<div class="logo">
     <div class="portfolio-name">
       <span>your's name Portfolio</span><br>
       <span class="contact-info">
@@ -14,7 +14,7 @@ You change the
         <span class="phone-icon">📞</span> Phone: Your Phone Number
       </span>
     </div>
-  </div>
+  </div>"
   
 2.About me:
   i)Change the Profile Image: You can update the src attribute of the <img> tag with a new image file that reflects the new profile picture.
@@ -24,7 +24,7 @@ You change the
   index5.html
   <section id="about">
     <h2>About Me</h2>
-    <img src="<!-- your image file -->" alt="Your Profile Image" class="profile-img">
+    <img src="path-to-your-new-profile-image.jpg" alt="Your Profile Image" class="profile-img">
     <h3><!-- Your Name --></h3>
     <p><!-- Profile Summary --></p>
   </section>
